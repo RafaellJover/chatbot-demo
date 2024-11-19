@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Dialogflow Chatbot interface for use at Brock University.">
+    <title>CareerZone Navigator</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>   
+    <div class="container">
+    
+        <header></header>
+        <h1>CareerZone Navigator</h1>
+        <p>Welcome to the CareerZone Navigator! This is a dialogflow demo. Feel free to ask something in textbox or talk in the microphone.</p>
+        <div class="chatbot-container">
+            <script src="https://www.gstatic.com/dialogflow-console/fast/messenger/bootstrap.js?v=1"></script>
+            <df-messenger
+              intent="WELCOME"
+              chat-title="NewAgent"
+              agent-id="35e3666b-7641-4fe2-87eb-41426941ae5b"
+              language-code="en"
+            ></df-messenger>
+          </div>
+
+        <div class="button-container">
+            <a href="https://www.brocku.ca" class="btn">Visit Brock University</a>
+            <a href="https://cpibrock.atlassian.net/wiki/spaces/CTS/overview?homepageId=1370226888" class="btn">Confluence Pages</a>
+        </div>
+
+        <footer>
+            &copy; 2024 Brock University
+        </footer>
+    </div>
+</body>
+</html>
